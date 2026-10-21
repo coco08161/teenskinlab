@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Myth Lab — Teen Skin Lab</title>
+  <meta name="description" content="Flip the cards: popular sun-safety and acne claims, tested against the evidence.">
+  <meta name="theme-color" content="#ffd60a">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero band-sun">
+      <div class="wrap inner">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a> / Myth Lab</p>
+          <p class="eyebrow" data-reveal>Myth Lab</p>
+          <h1 data-reveal>Myth or<br><span class="mark amber">fact?</span></h1>
+          <p class="lead" data-reveal>See which popular skincare claims are supported by evidence. Read the claim, make your guess, then flip the card.</p>
+        </div>
+        <figure class="polaroid" data-reveal="tilt" style="--r:-3deg">
+          <img src="https://images.unsplash.com/photo-1605036929011-e0b911af400c?auto=format&fit=crop&w=800&q=75" alt="Person sitting on a sunny beach">
+          <figcaption>Test what you know</figcaption>
+        </figure>
+      </div>
+      <div class="tape ink" aria-hidden="true"><div class="track">
+        <span>Myth</span><span>Fact</span><span>Myth</span><span>Fact</span><span>Check the source</span><span>Flip the card</span>
+        <span>Myth</span><span>Fact</span><span>Myth</span><span>Fact</span><span>Check the source</span><span>Flip the card</span>
+      </div></div>
+    </section>
+
+    <section class="pad">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Sun claims</p>
+        <h2 data-reveal>Under the sun.</h2>
+        <div class="flips" data-stagger style="margin-top:36px">
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #01</span><span class="q">"A base tan protects me from burning."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>A tan is a sign your skin has been damaged by UV. It offers very little protection compared to sunscreen.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #02</span><span class="q">"I don't need sunscreen when it's cloudy."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>Up to 80% of the sun's UV rays can pass through clouds. Check the UV index, not the sky.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #03</span><span class="q">"Darker skin doesn't need sunscreen."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>Everyone can get skin cancer. In people with darker skin it's often found later, when it's harder to treat.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #04</span><span class="q">"Tanning beds are safer than the sun."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>Tanning beds give off strong UV radiation. Using them raises your risk of melanoma and other skin cancers.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #05</span><span class="q">"With SPF 100, I don't need to reapply."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>Every sunscreen wears off. Reapply every 2 hours and after swimming or sweating, whatever the SPF.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #06</span><span class="q">"You can burn on a snowy day."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Fact.</span><p>Snow, water, and sand reflect UV rays, so you can get extra exposure — even in winter.</p></span>
+          </button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pad band-sun rule" style="border-bottom:var(--line)">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Acne claims</p>
+        <h2 data-reveal>Breakout beliefs.</h2>
+        <div class="flips" data-stagger style="margin-top:36px">
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #07</span><span class="q">"Acne means your skin is dirty."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>Acne comes from oil, dead skin cells, bacteria, and inflammation inside pores — not dirt. Over-scrubbing can make it worse.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #08</span><span class="q">"Popping a pimple makes it heal faster."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>Popping can push bacteria deeper, increase swelling, and leave scars or dark marks.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #09</span><span class="q">"Chocolate causes acne."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Not proven.</span><p>No single food has been shown to cause acne. Some studies link high-glycemic diets to more breakouts in some people.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #10</span><span class="q">"Toothpaste dries out pimples."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>Toothpaste can irritate and even burn skin. Benzoyl peroxide or salicylic acid are proven spot treatments.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #11</span><span class="q">"Oily skin doesn't need moisturizer."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Myth.</span><p>Acne treatments can dry skin out. A light, non-comedogenic moisturizer helps your barrier without clogging pores.</p></span>
+          </button></div>
+          <div class="flip" data-reveal><button type="button" aria-pressed="false">
+            <span class="face front"><span class="label">Claim #12</span><span class="q">"Acne treatments take weeks to work."</span><span class="hint">Flip the card ↻</span></span>
+            <span class="face back"><span class="label">The research</span><span class="verdict">Fact.</span><p>Most treatments take 4–8 weeks to show results. Stick with one before switching.</p></span>
+          </button></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pad-sm">
+      <div class="wrap sources" data-reveal>
+        <p class="eyebrow">Sources</p>
+        <ol>
+          <li><a href="https://www.aad.org/public/everyday-care/sun-protection/sunscreen-patients/sunscreen-faqs" target="_blank" rel="noopener">American Academy of Dermatology — Sunscreen FAQs</a></li>
+          <li><a href="https://www.aad.org/public/diseases/skin-cancer/types/common/melanoma/skin-color" target="_blank" rel="noopener">American Academy of Dermatology — Melanoma strikes people of every skin color</a></li>
+          <li><a href="https://www.aad.org/media/stats-indoor-tanning" target="_blank" rel="noopener">American Academy of Dermatology — Indoor tanning facts</a></li>
+          <li><a href="https://www.aad.org/public/diseases/acne/skin-care/tips" target="_blank" rel="noopener">American Academy of Dermatology — Habits that can worsen acne</a></li>
+          <li><a href="https://www.aad.org/public/diseases/acne/causes/diet" target="_blank" rel="noopener">American Academy of Dermatology — Can the right diet get rid of acne?</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pad band-sun rule">
+      <div class="wrap">
+        <a class="next" href="research.html" data-reveal>
+          <h2>Next: How to<br>read research.</h2>
+          <span class="circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

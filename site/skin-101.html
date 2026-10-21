@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skin 101 — Teen Skin Lab</title>
+  <meta name="description" content="The basics of how your skin works: its layers, oil glands, melanin, and the skin barrier.">
+  <meta name="theme-color" content="#ffd60a">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .layers { display: grid; gap: 0; border: var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: 10px 10px 0 var(--ink); }
+    .layer { padding: clamp(22px, 3vw, 34px); border-top: var(--line); display: grid; grid-template-columns: 200px 1fr; gap: 20px; align-items: center; }
+    .layer:first-child { border-top: 0; }
+    .layer h3 { margin: 0; }
+    .layer p { margin: 0; }
+    @media (max-width: 640px) { .layer { grid-template-columns: 1fr; gap: 8px; } }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero band-sun">
+      <div class="wrap inner">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a> / <a href="learn.html">Learn</a> / Skin 101</p>
+          <p class="eyebrow" data-reveal>The basics</p>
+          <h1 data-reveal>Skin<br><span class="mark amber">101.</span></h1>
+          <p class="lead" data-reveal>Start with the basics. Learn how your skin works, why it changes, and what keeps it healthy.</p>
+        </div>
+        <figure class="polaroid" data-reveal="tilt" style="--r:3deg">
+          <img src="https://images.unsplash.com/photo-1745141063798-7fa04698ea80?auto=format&fit=crop&w=800&q=75" alt="A bottle of gentle gel cleanser">
+          <figcaption>Your largest organ</figcaption>
+        </figure>
+      </div>
+      <div class="tape ink" aria-hidden="true"><div class="track">
+        <span>Epidermis</span><span>Dermis</span><span>Fat layer</span><span>Melanin</span><span>Oil glands</span><span>Skin barrier</span>
+        <span>Epidermis</span><span>Dermis</span><span>Fat layer</span><span>Melanin</span><span>Oil glands</span><span>Skin barrier</span>
+      </div></div>
+    </section>
+
+    <section class="pad">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Three layers</p>
+        <h2 data-reveal>What your skin<br>is made of.</h2>
+        <p class="lead" data-reveal>Skin is your body's largest organ. It keeps water in, keeps germs out, helps control your temperature, and lets you feel touch.</p>
+        <div class="layers" data-reveal style="margin-top:40px">
+          <div class="layer" style="background:var(--sun)"><h3>Epidermis</h3><p>The outer layer you can see. It constantly makes new skin cells and sheds old ones, and it's home to melanocytes — the cells that make melanin (skin pigment).</p></div>
+          <div class="layer" style="background:var(--peach)"><h3>Dermis</h3><p>The middle layer. It holds collagen (for strength), blood vessels, nerves, hair follicles, sweat glands, and oil glands.</p></div>
+          <div class="layer" style="background:var(--cream)"><h3>Fat layer</h3><p>The deepest layer (hypodermis). It cushions your body and helps keep you warm.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pad band-ink on-dark">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Key players</p>
+        <h2 data-reveal>Four things<br><span style="color:var(--sun)">worth knowing.</span></h2>
+        <div class="grid-2" data-stagger style="margin-top:40px;color:var(--ink)">
+          <div class="box sun" data-reveal><h3>Melanin</h3><p>The pigment that gives skin its color. It absorbs some UV, but even the darkest skin can still be damaged by the sun — so everyone needs protection.</p></div>
+          <div class="box" data-reveal><h3>Oil glands</h3><p>They make sebum, which keeps skin and hair moisturized. Puberty hormones ramp them up, which is one reason acne is common in teens.</p></div>
+          <div class="box" data-reveal><h3>The skin barrier</h3><p>The outermost layer of skin cells and fats that holds water in and keeps irritants out. Over-washing and harsh scrubs can weaken it.</p></div>
+          <div class="box sun" data-reveal><h3>Cell turnover</h3><p>Your skin constantly replaces itself, pushing new cells up from below. When dead cells don't shed properly, they can help clog pores.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pad">
+      <div class="wrap split">
+        <div class="sticky">
+          <p class="eyebrow" data-reveal>Everyday care</p>
+          <h2 data-reveal>Keep it<br>simple.</h2>
+          <p data-reveal>A basic routine is enough for most teens. Fancy 10-step routines aren't required.</p>
+        </div>
+        <ul class="checklist" data-stagger>
+          <li data-reveal><div><b>Cleanse.</b>A gentle cleanser in the morning and at night, and after sweating.</div></li>
+          <li data-reveal><div><b>Moisturize.</b>Even oily skin benefits from a light, non-comedogenic moisturizer.</div></li>
+          <li data-reveal><div><b>Protect.</b>Broad-spectrum SPF 30+ on exposed skin every day.</div></li>
+          <li data-reveal><div><b>Notice.</b>Pay attention to how your skin reacts and to any spots that change.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pad-sm">
+      <div class="wrap sources" data-reveal>
+        <p class="eyebrow">Sources</p>
+        <ol>
+          <li><a href="https://www.aad.org/public/everyday-care/skin-care-basics" target="_blank" rel="noopener">American Academy of Dermatology — Skin care basics</a></li>
+          <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK279255/" target="_blank" rel="noopener">InformedHealth.org (NCBI) — How does skin work?</a></li>
+          <li><a href="https://medlineplus.gov/ency/article/002293.htm" target="_blank" rel="noopener">MedlinePlus — Skin layers</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pad band-sun rule">
+      <div class="wrap">
+        <a class="next" href="acne.html" data-reveal>
+          <h2>Next: Acne &amp;<br>breakouts.</h2>
+          <span class="circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

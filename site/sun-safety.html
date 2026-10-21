@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sun Safety — Teen Skin Lab</title>
+  <meta name="description" content="A simple, research-based sun-safety routine for teens: SPF 30+, reapplying, shade, clothing, and reading the UV index.">
+  <meta name="theme-color" content="#ffd60a">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .uv { display: grid; grid-template-columns: repeat(5, 1fr); border: var(--line); border-radius: 14px; overflow: hidden; margin-top: 24px; }
+    .uv div { padding: 16px 14px; border-left: var(--line); }
+    .uv div:first-child { border-left: 0; }
+    .uv b { display: block; font-family: var(--display); font-weight: 400; font-size: 1.8rem; line-height: 1; }
+    .uv span { font-family: var(--mono); font-size: .72rem; font-weight: 700; text-transform: uppercase; }
+    @media (max-width: 640px) { .uv { grid-template-columns: 1fr; } .uv div { border-left: 0; border-top: var(--line); } .uv div:first-child { border-top: 0; } }
+  </style>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero band-sun">
+      <div class="wrap inner">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a> / <a href="learn.html">Learn</a> / Sun Safety</p>
+          <p class="eyebrow" data-reveal>Prevention</p>
+          <h1 data-reveal>Sun safety,<br>made <span class="mark amber">simple.</span></h1>
+          <p class="lead" data-reveal>Prevention starts young. Understand UV exposure and build sun-safe habits that fit school, sports, and everyday life.</p>
+        </div>
+        <figure class="polaroid" data-reveal="tilt" style="--r:3deg">
+          <img src="https://images.unsplash.com/photo-1691031319052-80a0fa7396c5?auto=format&fit=crop&w=800&q=75" alt="Teen in a blue cap applying a sunscreen stick">
+          <figcaption>Small habits, every day</figcaption>
+        </figure>
+      </div>
+      <div class="tape ink" aria-hidden="true"><div class="track">
+        <span>SPF 30+</span><span>Broad-spectrum</span><span>Water-resistant</span><span>Reapply every 2 hrs</span><span>Seek shade</span><span>Hat + sunglasses</span>
+        <span>SPF 30+</span><span>Broad-spectrum</span><span>Water-resistant</span><span>Reapply every 2 hrs</span><span>Seek shade</span><span>Hat + sunglasses</span>
+      </div></div>
+    </section>
+
+    <section class="pad">
+      <div class="wrap split">
+        <div class="sticky">
+          <p class="eyebrow" data-reveal>The everyday routine</p>
+          <h2 data-reveal>Six habits.<br>That's it.</h2>
+          <p data-reveal>You don't need an expensive routine. You need one you'll actually do — on sunny days, cloudy days, and practice days.</p>
+        </div>
+        <ul class="checklist" data-stagger>
+          <li data-reveal><div><b>Choose broad-spectrum SPF 30 or higher.</b>"Broad-spectrum" means it protects against both UVA and UVB rays. Water-resistant is best if you'll sweat or swim.</div></li>
+          <li data-reveal><div><b>Use enough.</b>Most people under-apply. For your body, adults need about 1 ounce — roughly enough to fill a shot glass. Don't forget ears, neck, and the tops of your feet.</div></li>
+          <li data-reveal><div><b>Reapply every 2 hours.</b>And right after swimming or heavy sweating, even if the bottle says water-resistant.</div></li>
+          <li data-reveal><div><b>Seek shade.</b>The sun's rays are strongest between 10 a.m. and 2 p.m. If your shadow is shorter than you are, find shade.</div></li>
+          <li data-reveal><div><b>Cover up.</b>A lightweight long-sleeve shirt, a wide-brimmed hat, and UV-blocking sunglasses do a lot of the work for you.</div></li>
+          <li data-reveal><div><b>Skip tanning beds.</b>Indoor tanning exposes you to strong UV radiation and raises your risk of skin cancer, including melanoma.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pad band-ink on-dark">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Read the sky</p>
+        <h2 data-reveal>Check the<br><span style="color:var(--sun)">UV index.</span></h2>
+        <p class="lead" data-reveal>Most weather apps show it. When the UV index is 3 or higher, sun protection matters — even if it doesn't feel hot.</p>
+        <div class="uv" data-reveal>
+          <div style="background:#5cb85c;color:#15120e"><b>0–2</b><span>Low</span></div>
+          <div style="background:var(--sun);color:#15120e"><b>3–5</b><span>Moderate</span></div>
+          <div style="background:var(--amber);color:#15120e"><b>6–7</b><span>High</span></div>
+          <div style="background:#e5383b;color:#fffaf0"><b>8–10</b><span>Very high</span></div>
+          <div style="background:#7b2cbf;color:#fffaf0"><b>11+</b><span>Extreme</span></div>
+        </div>
+        <p class="src" style="color:var(--peach)">Scale: <a href="https://www.epa.gov/sunsafety/uv-index-scale-0" target="_blank" rel="noopener">U.S. EPA UV Index Scale</a></p>
+      </div>
+    </section>
+
+    <section class="pad">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Decode the bottle</p>
+        <h2 data-reveal>Reading a<br>sunscreen label.</h2>
+        <div class="grid-3" data-stagger style="margin-top:40px">
+          <div class="box sun" data-reveal><h3>SPF</h3><p>Measures protection from UVB, the rays that cause sunburn. SPF 30 blocks about 97% of UVB rays; higher numbers block slightly more, but no sunscreen blocks 100%.</p></div>
+          <div class="box" data-reveal><h3>Broad-spectrum</h3><p>Protects against UVA too. UVA rays reach deeper into skin and contribute to skin aging and skin cancer.</p></div>
+          <div class="box" data-reveal><h3>Water-resistant</h3><p>Labeled for 40 or 80 minutes. No sunscreen is waterproof — reapply after swimming or sweating.</p></div>
+        </div>
+        <div class="grid-2" data-stagger style="margin-top:30px">
+          <div class="box" data-reveal><h3>Mineral sunscreen</h3><p>Uses zinc oxide and/or titanium dioxide. Often a good pick for sensitive skin.</p></div>
+          <div class="box" data-reveal><h3>Chemical sunscreen</h3><p>Uses filters like avobenzone that absorb UV. Often lighter and easier to rub in. The best sunscreen is the one you'll wear every day.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pad-sm band-peach rule">
+      <div class="wrap grid-3" data-stagger>
+        <div data-reveal><h3>At school</h3><p>Keep a sunscreen stick in your backpack for lunch, recess, and outdoor P.E.</p></div>
+        <div data-reveal><h3>At practice</h3><p>Use water-resistant sunscreen, a cap, and reapply at halftime or water breaks.</p></div>
+        <div data-reveal><h3>At the beach</h3><p>Water, sand, and snow reflect UV, so you get exposed from above and below.</p></div>
+      </div>
+    </section>
+
+    <section class="pad-sm">
+      <div class="wrap sources" data-reveal>
+        <p class="eyebrow">Sources</p>
+        <ol>
+          <li><a href="https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen" target="_blank" rel="noopener">American Academy of Dermatology — How to apply sunscreen</a></li>
+          <li><a href="https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels" target="_blank" rel="noopener">American Academy of Dermatology — Understand sunscreen labels</a></li>
+          <li><a href="https://www.aad.org/public/everyday-care/sun-protection/sunscreen-patients/sunscreen-faqs" target="_blank" rel="noopener">American Academy of Dermatology — Sunscreen FAQs</a></li>
+          <li><a href="https://www.cdc.gov/skin-cancer/prevention/index.html" target="_blank" rel="noopener">CDC — Reducing risk for skin cancer</a></li>
+          <li><a href="https://www.epa.gov/sunsafety/uv-index-scale-0" target="_blank" rel="noopener">U.S. EPA — UV Index Scale</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pad band-sun rule">
+      <div class="wrap">
+        <a class="next" href="know-the-signs.html" data-reveal>
+          <h2>Next: Know<br>the signs.</h2>
+          <span class="circle" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

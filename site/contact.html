@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Teen Skin Lab</title>
+  <meta name="description" content="Have a question, topic idea, or feedback for Teen Skin Lab? Send us a message.">
+  <meta name="theme-color" content="#ffd60a">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero band-sun">
+      <div class="wrap inner">
+        <div>
+          <p class="crumbs"><a href="index.html">Home</a> / Contact</p>
+          <p class="eyebrow" data-reveal>Contact</p>
+          <h1 data-reveal>Ask the<br><span class="mark amber">lab.</span></h1>
+          <p class="lead" data-reveal>Want a free workshop, a sunscreen station, or to join the club? Have a question or idea? Send a message and we'll get back to you.</p>
+        </div>
+        <figure class="polaroid" data-reveal="tilt" style="--r:-3deg">
+          <img src="https://images.unsplash.com/photo-1770563182237-915707b86c9e?auto=format&fit=crop&w=800&q=75" alt="Group of teens walking together outdoors">
+          <figcaption>We read every message</figcaption>
+        </figure>
+      </div>
+      <div class="tape ink" aria-hidden="true"><div class="track">
+        <span>Questions</span><span>Topic ideas</span><span>Feedback</span><span>Collabs</span><span>School clubs</span>
+        <span>Questions</span><span>Topic ideas</span><span>Feedback</span><span>Collabs</span><span>School clubs</span>
+      </div></div>
+    </section>
+
+    <section class="pad">
+      <div class="wrap split">
+        <div class="sticky">
+          <p class="eyebrow" data-reveal>Before you write</p>
+          <h2 data-reveal>Good to<br>know.</h2>
+          <div class="box sun" data-reveal style="margin-top:20px">
+            <h3>Not for medical advice</h3>
+            <p>We can't diagnose or give advice about your own skin. If you're worried about a spot or a skin problem, talk to a trusted adult and a healthcare professional.</p>
+          </div>
+          <p class="eyebrow" data-reveal style="margin-top:30px">Or find us on</p>
+          <div data-socials data-reveal></div>
+        </div>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree form ID (see README.md) -->
+        <form class="form box" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-formspree data-reveal>
+          <div><label for="first">First name</label><input id="first" name="first_name" autocomplete="given-name"></div>
+          <div><label for="last">Last name</label><input id="last" name="last_name" autocomplete="family-name"></div>
+          <div class="full"><label for="email">Email *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+          <div class="full"><label for="reason">Reason for contact *</label>
+            <select id="reason" name="reason" required>
+              <option value="">Choose one…</option>
+              <option data-key="workshop">Request a free workshop</option>
+              <option data-key="station">Host or sponsor a Sun-Safe Station</option>
+              <option data-key="volunteer">Volunteer with Teen Skin Lab</option>
+              <option data-key="chapter">Start a chapter at my school</option>
+              <option data-key="partner">Partner with us (dermatologist, business, organization)</option>
+              <option data-key="question">Question about a topic</option>
+              <option data-key="feedback">Feedback or video idea</option>
+              <option data-key="other">Something else</option>
+            </select>
+          </div>
+          <div class="full"><label for="org">Organization / school (optional)</label><input id="org" name="organization"></div>
+          <div class="full"><label for="msg">Message *</label><textarea id="msg" name="message" required></textarea></div>
+          <div class="full">
+            <button class="btn" type="submit">Send message <span class="arr">→</span></button>
+            <p class="form-status" role="status"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="main.js"></script>
+</body>
+</html>
